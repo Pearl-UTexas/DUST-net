@@ -1,3 +1,6 @@
+# Others
+.DS_Store
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -13,7 +16,7 @@ develop-eggs/
 dist/
 downloads/
 eggs/
-.eggs/
+.eggs/s
 lib/
 lib64/
 parts/
@@ -127,3 +130,4 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
