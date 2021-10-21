@@ -6,53 +6,55 @@
     <meta charset="UTF-8">
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>ScrewNet: Category-Independent Articulation Model Estimation From Depth Images Using Screw Theory | ScrewNet</title>
+<title>Distributional Depth-Based Estimation of Object Articulation Models | Ajinkya Jain, Stephen Giguere, Rudolf Lioutikov, and Scott Niekum University of Texas at Austin</title>
 <meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="ScrewNet: Category-Independent Articulation Model Estimation From Depth Images Using Screw Theory" />
+<meta property="og:title" content="Distributional Depth-Based Estimation of Object Articulation Models" />
 <meta property="og:locale" content="en_US" />
+<meta name="description" content="Ajinkya Jain, Stephen Giguere, Rudolf Lioutikov, and Scott Niekum University of Texas at Austin" />
+<meta property="og:description" content="Ajinkya Jain, Stephen Giguere, Rudolf Lioutikov, and Scott Niekum University of Texas at Austin" />
 <link rel="canonical" href="http://localhost:4000/" />
 <meta property="og:url" content="http://localhost:4000/" />
-<meta property="og:site_name" content="ScrewNet" />
+<meta property="og:site_name" content="Distributional Depth-Based Estimation of Object Articulation Models" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/","headline":"ScrewNet: Category-Independent Articulation Model Estimation From Depth Images Using Screw Theory","name":"ScrewNet","@type":"WebSite","@context":"https://schema.org"}</script>
+{"description":"Ajinkya Jain, Stephen Giguere, Rudolf Lioutikov, and Scott Niekum University of Texas at Austin","headline":"Distributional Depth-Based Estimation of Object Articulation Models","url":"http://localhost:4000/","@type":"WebSite","name":"Distributional Depth-Based Estimation of Object Articulation Models","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="/assets/css/style.css?v=f009aac1b0499e7f2c9b01accc9691b5d98add92">
+    <link rel="stylesheet" href="/assets/css/style.css?v=3c92b6467a422d833c8e95f7b9adf86d503fed44">
   </head>
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
     <header class="page-header" role="banner">
-      <h1 class="project-name">ScrewNet: Category-Independent Articulation Model Estimation From Depth Images Using Screw Theory</h1>
-      <h2 class="project-tagline"></h2>
+      <h1 class="project-name">Distributional Depth-Based Estimation of Object Articulation Models</h1>
+      <h2 class="project-tagline">Ajinkya Jain, Stephen Giguere, Rudolf Lioutikov, and Scott Niekum <br> University of Texas at Austin</h2>
       
-        <a href="https://github.com/Pearl-UTexas/ScrewNet" class="btn">View on GitHub</a>
+        <a href="https://github.com/Pearl-UTexas/DUST-net" class="btn">View on GitHub</a>
       
-       <a href="https://arxiv.org/abs/2008.10518" class="btn">Paper</a>
+       <a href="https://arxiv.org/abs/2108.05875" class="btn">Paper</a>
 
     </header>
 
     <main id="content" class="main-content" role="main">
       <h3 id="abstract">Abstract</h3>
-<p>Robots in human environments will need to interact with a wide variety of articulated objects such as cabinets, drawers, and dishwashers while assisting humans in performing day-to-day tasks. Existing methods either require objects to be textured or need to know the articulation model category a priori for estimating the model parameters for an articulated object. We propose ScrewNet, a novel approach that estimates an object’s articulation model directly from depth images without requiring a priori knowledge of the articulation model category. ScrewNet uses screw theory to unify the representation of different articulation types and perform category-independent articulation model estimation. We evaluate our approach on two benchmarking datasets and compare its performance with a current state-of-the-art method. Results demonstrate that ScrewNet can successfully estimate the articulation models and their parameters for novel objects across articulation model categories with better on average accuracy than the prior state-of-the-art method.</p>
+<p>We propose a method that efficiently learns distributions over articulation model parameters directly from depth images without the need to know articulation model categories a priori. By contrast, existing methods that learn articulation models from raw observations typically only predict point estimates of the model parameters, which are insufficient to guarantee the safe manipulation of articulated objects. Our core contributions include a novel representation for distributions over rigid body transformations and articulation model parameters based on screw theory, von Mises-Fisher distributions, and Stiefel manifolds. Combining these concepts allows for an efficient, mathematically sound representation that implicitly satisfies the constraints that rigid body transformations and articulations must adhere to. Leveraging this representation, we introduce a novel deep learning based approach, DUST-net, that performs category-independent articulation model estimation while also providing model uncertainties. We evaluate our approach on several benchmarking datasets and real-world objects and compare its performance with two current state-of-the-art methods. Our results demonstrate that DUST-net can successfully learn distributions over articulation models for novel objects across articulation model categories, which generate point estimates with better accuracy than state-of-the-art methods and effectively capture the uncertainty over predicted model parameters due to noisy inputs.</p>
 
 <h3 id="cite">Cite</h3>
 <p>If you find this work useful in your own research, please consider citing:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@inproceedings{jainscrewnet20,
-    author = {Jain, Ajinkya and Lioutikov, Rudolf and Chuck, Caleb and Niekum, Scott},
-    title = {ScrewNet: Category-Independent Articulation Model Estimation From Depth Images Using Screw Theory},
-    booktitle = {arXiv preprint},
-    year = {2020}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@article{jain2021distributional,
+  title={Distributional Depth-Based Estimation of Object Articulation Models},
+  author={Jain, Ajinkya and Giguere, Stephen and Lioutikov, Rudolf and Niekum, Scott},
+  journal={arXiv preprint arXiv:2108.05875},
+  year={2021}
 }
 </code></pre></div></div>
 
 
       <footer class="site-footer">
         
-          <span class="site-footer-owner"><a href="https://github.com/Pearl-UTexas/ScrewNet">ScrewNet</a> is maintained by <a href="https://github.com/Pearl-UTexas">Pearl-UTexas</a>.</span>
+          <span class="site-footer-owner"><a href="https://github.com/Pearl-UTexas/DUST-net">DUST-net</a> is maintained by <a href="https://github.com/Pearl-UTexas">Pearl-UTexas</a>.</span>
         
         <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
       </footer>
