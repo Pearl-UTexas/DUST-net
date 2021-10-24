@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Distributional Depth-Based Estimation of Object Articulation Models"
+title: "Distributional Depth-Based Estimation of  Object Articulation Models"
 ---
 
 ### Abstract
@@ -12,7 +12,8 @@ If you find this work useful in your own research, please consider citing:
 @article{jain2021distributional,
   title={Distributional Depth-Based Estimation of Object Articulation Models},
   author={Jain, Ajinkya and Giguere, Stephen and Lioutikov, Rudolf and Niekum, Scott},
-  journal={arXiv preprint arXiv:2108.05875},
-  year={2021}
+  booktitle={5th Annual Conference on Robot Learning (CoRL)},
+  year={2021},
+  organization={PMLR}
 }
 ```
